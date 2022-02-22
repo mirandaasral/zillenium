@@ -1,10 +1,19 @@
-*{
-    padding: 5px; 
+html{
+    min-height: 100%;
+    
 }
 
 .homepage_wrapper{
-    display: grid;
-    grid-template-columns: auto;
-    grid-row: 1;
-    height: 100%; 
+    min-height: 100%;
+    background-image: url("noiseporn-l28IKbjb7oc-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.homepage_wrapper img{
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0; 
 }
