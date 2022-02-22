@@ -1,0 +1,10 @@
+*{
+    padding: 5px; 
+}
+
+.homepage_wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: 1;
+    height: 100%; 
+}
