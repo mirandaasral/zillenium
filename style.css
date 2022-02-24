@@ -1,19 +1,41 @@
-html{
-    min-height: 100%;
-    
+html {
+  min-height: 100%;
 }
 
-.homepage_wrapper{
-    min-height: 100%;
-    background-image: url("noiseporn-l28IKbjb7oc-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
+.homepage_image img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(50%);
 }
 
-.homepage_wrapper img{
-    width: 100%;
-    position: absolute;
-    top: 0; 
-    left: 0; 
+.navbar {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  float: right;
+  right: 2%;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar_links {
+  position: relative;
+  right: 2%;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo img {
+  height: auto;
+  width: 20%;
+  position: absolute;
+  top: 2%;
+  left: 2%;
 }
