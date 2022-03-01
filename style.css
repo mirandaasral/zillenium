@@ -1,5 +1,31 @@
-html {
-  min-height: 100%;
+html,
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #151515;
+  /* min-height: 100%; */
+}
+
+.tagline {
+  text-align: center;
+  display: inline;
+}
+
+h1 {
+  display: inline;
+  color: white;
+  font-family: Termina;
+  position: absolute;
+  text-align: center;
+  top: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-weight: 400;
+  opacity: 0.5;
+  font-style: italic;
 }
 
 .homepage_image img {
@@ -8,6 +34,18 @@ html {
   top: 0;
   left: 0;
   filter: brightness(50%);
+  height: 100%;
+  object-fit: cover;
+}
+
+.background img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(50%);
+  height: 100%;
+  object-fit: cover;
 }
 
 .navbar {
@@ -49,4 +87,18 @@ html {
   position: absolute;
   top: 5%;
   left: 2%;
+}
+
+.top_film img {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  margin-top: 31em;
+}
+
+.film_reel img {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  margin-top: 35em;
 }
