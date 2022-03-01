@@ -16,15 +16,26 @@ html {
   text-align: right;
   float: right;
   right: 2%;
-  text-decoration: none;
-  color: white;
+  top: 5%;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-top: 2em;
 }
 
 .navbar_links {
+  display: inline-block;
   position: relative;
   right: 2%;
+  list-style-type: none;
+  top: 5%;
+}
+
+.navbar_links a {
   text-decoration: none;
   color: white;
+  font-family: Termina;
+  font-size: 1.5rem;
+  margin: 1em;
 }
 
 .logo {
@@ -34,8 +45,8 @@ html {
 
 .logo img {
   height: auto;
-  width: 20%;
+  width: 30%;
   position: absolute;
-  top: 2%;
+  top: 5%;
   left: 2%;
 }
