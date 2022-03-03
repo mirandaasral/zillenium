@@ -116,7 +116,8 @@ footer img {
   width: 100%;
 }
 
-/*.lineup {
+/*old styling for lineup
+.lineup {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
