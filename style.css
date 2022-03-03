@@ -5,7 +5,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #151515;
-  /* min-height: 100%; */
+  min-height: 100%;
 }
 
 .tagline {
@@ -107,15 +107,16 @@ body {
   height: auto;
   width: 100%;
   margin-top: 35em;
+  margin-bottom: 7em;
 }
 
 footer img {
   position: relative;
-  margin-top: -20em;
+  margin-top: -10em;
   width: 100%;
 }
 
-.lineup {
+/*.lineup {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
@@ -220,14 +221,30 @@ footer img {
   margin-top: -14em;
   margin-left: -7em;
   min-width: 100%;
+}*/
+
+.topfeatured {
+  font-family: raleway, sans-serif;
+  font-size: 2.99vw;
+  line-height: 4vw;
 }
 
-.largest {
-  font-size: 4vw;
+.featured {
+  font-family: raleway, sans-serif;
+  font-size: 2.2vw;
+  line-height: 3.5vw;
 }
 
-.medium {
-  font-size: 2vw;
+.others{
+  font-family: raleway, sans-serif;
+  font-size: 1.7vw;
+  color: #D0D0D0;
+}
+
+.smaller {
+  font-family: raleway, sans-serif;
+  font-size: 1.5vw;
+  color: #D0D0D0;
 }
 /*ticket page specifics*/
 .box-container{
@@ -360,8 +377,6 @@ footer img {
   transform: translateY(-50%);
 }
 
-
-
 .addons-icon {
   grid-area: icon1;
   align-items: center;
@@ -404,4 +419,86 @@ footer img {
   font-family: raleway, sans-serif;
   font-weight: 200;
   font-size: 1.25em;
+}
+
+/*experimental lineup grid*/
+.lineup-new{
+  display: grid;
+  row-gap: 5em;
+  margin-right: 4em;
+  margin-left: 4em;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 11fr;
+  grid-template-areas: 
+  "friday arrow1 blank lineup1"
+  "saturday arrow2 blank lineup2"
+  "sunday arrow3 blank lineup3";
+}
+
+.daycontainer{
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+}
+
+.day {
+  font-family: Termina;
+  color: white;
+  font-weight: 600;
+  font-size: 3vw;
+  text-align: center;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+  margin-left: -5vw;
+  margin-right: -5vw;
+}
+
+.friday{
+  grid-area: friday;
+}
+
+.saturday{
+  grid-area: saturday;
+}
+
+.sunday{
+  grid-area: sunday;
+}
+
+.fri_arrow{
+  grid-area: arrow1;
+}
+.sat_arrow{
+  grid-area: arrow2;
+}
+.sun_arrow{
+  grid-area: arrow3;
+}
+
+.linetext-container{
+  justify-items: center;
+}
+
+.fri_line{
+  grid-area: lineup1;
+  color: white;
+}
+.sat_line{
+  grid-area: lineup2;
+  color: white;
+}
+.sun_line{
+  grid-area: lineup3;
+  color: white;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  line-height: 3.5vw;
 }
