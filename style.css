@@ -19,7 +19,7 @@ body {
   font-family: Termina;
   position: absolute;
   text-align: center;
-  top: 17em;
+  top: 16em;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -33,7 +33,7 @@ body {
   font-family: Termina;
   position: absolute;
   text-align: center;
-  top: 9em;
+  top: 8.5em;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -106,7 +106,7 @@ body {
   position: relative;
   height: auto;
   width: 100%;
-  margin-top: 35em;
+  margin-top: 32em;
   margin-bottom: 7em;
 }
 
