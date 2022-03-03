@@ -1,0 +1,175 @@
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href = "https://use.typekit.net/tnv4cny.css">
+        <title>CSS Accordion</title>
+    
+    <style>
+        input {
+            display: none;
+        }
+        
+        label {
+            font-family: raleway, sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            display: block;    
+            padding: 8px 22px;
+            margin: 0 0 1px 0;
+            cursor: pointer;
+            background: ;
+            border-radius: 3px;
+            color: #FFF;
+            transition: ease .5s;
+            position: relative; /* ADDING THIS IS REQUIRED */
+        }
+        
+        label:hover {
+        }
+        
+        label::after {
+            color: #FFF;
+            content: '+';
+            font-size: 34px;
+            font-weight: bold;
+            position: absolute;
+            right: 10px;
+            top: 2px;
+        }
+        
+        input:checked + label::after {
+            content: '-';
+            right: 14px;
+            top: 3px;
+        }
+        
+        .content {
+            font-family: raleway, sans-serif;
+            font-weight: 150;
+            font-size: 16px;
+            text-align: left;
+            position: relative;
+            padding: 10px 25px;
+            color: #FFF;
+            margin: 0 0 1px 0;
+            border-radius: 3px;
+        }
+
+        .faq {
+            font-family: raleway, sans-serif;
+            font-size:45px;
+            text-align: left;
+            position: relative;
+            color: #FFF;
+            padding-left: .3em;
+        }
+        
+        input + label + .content {
+            display: none;
+        }
+        
+        input:checked + label + .content {
+            display: block;
+        }
+
+        .bg{
+        height: 950px;
+        width: 100%;
+        z-index: 0;
+        }
+
+        .pad{
+            padding-right: 1.5em;
+            padding-left: -1em;
+        }
+    
+    </style>
+    </head>
+    <body>
+        <div class = "homepage_wrapper">
+            <div class = "homepage_image">
+                <img class="bg" src = "tickets-and-faq-bg.png">
+            </div>
+            <div class = "logo">
+                <img src = "logo_prot_3.svg">
+            </div>
+            <div class = "navbar">
+                <ul class = "navbar_links">
+                    <li>
+                        <a href = "tickets.html">Tickets</a>
+                        <a href = "faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class = "myDiv">
+                <h10>FAQ</h10>
+            </div>
+            <div class = "myDiv">
+                <h10>FAQ</h10>
+            </div>
+        </div>
+        
+        <div class = "myDiv">
+            <h6>FAQ</h6>
+        </div>
+
+        
+    </body>
+<body>
+    <div class="pad">
+        <div class= "faq">
+            <p><strong>F</strong>requently&nbsp;&nbsp;&nbsp;&nbsp; <strong>A</strong>sked&nbsp;&nbsp;&nbsp;&nbsp; <strong>Q</strong>uestions</p>
+        </div>
+
+        <input type="checkbox" id="title1" />
+        <label for="title1">Getting There</label>
+
+        <div class="content">
+            <p>Zillenium 2022 will be taking place at Citi field, which is easily accessible through public transportation. Take the 7 train to the Met/Willets Point station or hop on the Q48 bus which takes passengers directly to the stadium.
+
+            For those coming in from long Island or out of the the city, take advantage of the LIRR from Penn station. Two stops and a 15 mintue train ride later and youll be at Zillenium at the Mets/Willets Point station.
+
+            We recommend taking an uber or being driven to Citifield since very limited parking will be available to festival patreons.
+            </p>
+        </div>
+
+
+        <input type="checkbox" id="title2" />
+        <label for="title2">What Can I Bring?</label>
+
+        <div class="content">
+            <p>Hats, sunscreen, sunglasses, small bags/backpacks, factory sealed water bottles, government issued ID, portable chargers, earplugs, blankets, personal prescriptions.
+            </p>
+        </div>
+
+
+        <input type="checkbox" id="title3" />
+        <label for="title3">What Not to Bring</label>
+
+        <div class="content">
+            <p>Weapons of any kind, fireworks, Tobacco, drugs or drug parahernalia, pets, air horns, speakers, coolers, large umbrellas, signs, laser pointers, drones, professional cameras, tarps/tents.
+            </p>
+        </div>
+
+
+        <input type="checkbox" id="title4" />
+        <label for="title4">Food & Drinks</label>
+
+        <div class="content">
+            <p>By partnering with local businesses, Zillenium plans to offer a wide variety of cuisine for any attendee to enjoy. We also plan to offer vegan, vegetarian, and gluten free options to accommodate all dietary restrictions. </p>
+        </div>
+
+
+        <input type="checkbox" id="title5" />
+        <label for="title5">Lost and Found</label>
+
+        <div class="content">
+            <p>Found something that deosn’t belong to you or lost something important? Find your way to the lost and found tent or send a ticket to lostandfound@zillenium.com and let us take care of you!
+            </p>
+        </div>
+
+    </div>
+    </body>
+
+</html>
