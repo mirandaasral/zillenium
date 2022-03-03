@@ -103,42 +103,17 @@ body {
 }
 
 .top_film img {
-  position: relative;
+  position: absolute;
   height: auto;
   width: 100%;
-  margin-top: 35em;
+  margin-top: 40em;
 }
 
-footer img {
-  position: relative;
-  margin-top: -20em;
+.film_reel img {
+  height: auto;
   width: 100%;
-}
-
-.general-admissions {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  padding: 5em;
-  margin-top: 8em;
-}
-
-.general-admissions-icon {
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  max-width: 10%;
-  display: inline;
   position: absolute;
-}
-
-.general-admissions-info {
-  display: grid;
-  display: inline;
-  grid-column: 2/3;
-  color: white;
-  position: absolute;
-  text-align: left;
+  margin-top: -25em;
 }
 
 .lineup {
@@ -146,16 +121,13 @@ footer img {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
-  margin-right: 0;
-  position: relative;
-  margin-top: -20em;
 }
 
 .friday {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-row: 1/2;
-  position: relative;
+  grid-template-rows: auto;
+  margin-top: 80em;
 }
 
 .saturday {
@@ -163,8 +135,6 @@ footer img {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   margin-top: 15em;
-  grid-row: 2/3;
-  position: relative;
 }
 
 .sunday {
@@ -172,8 +142,6 @@ footer img {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   margin-top: 15em;
-  grid-row: 3/4;
-  position: relative;
 }
 
 .day {
@@ -185,73 +153,155 @@ footer img {
   font-size: 3vw;
   transform-origin: 0 0;
   transform: rotate(-90deg);
-}
-
-.fri_arrow {
-  display: grid;
-  grid-column: 2/3;
-  margin-top: -11em;
-  width: 20%;
   position: relative;
 }
 
-.sat_arrow {
+.arrow {
   display: grid;
   grid-column: 2/3;
-  width: 25%;
-  margin-top: -13em;
-  margin-left: -4em;
-  position: relative;
-}
-
-.sun_arrow {
-  display: grid;
-  grid-column: 2/3;
-  width: 20%;
-  position: relative;
   margin-top: -12em;
+  width: 100%;
 }
 
-.fri_line {
+.line {
   display: grid;
   grid-column: 3/4;
   color: white;
   font-family: Raleway;
-  display: inline-table;
-  margin-top: -13em;
-  min-width: 100%;
-  margin-left: -5em;
   position: relative;
-}
-
-.sat_line {
-  display: grid;
-  grid-column: 3/4;
-  color: white;
-  font-family: Raleway;
-  display: inline-table;
-  margin-top: -16em;
-  margin-left: -6em;
-  min-width: 100%;
-  position: relative;
-}
-
-.sun_line {
-  display: grid;
-  grid-column: 3/4;
-  position: relative;
-  color: white;
-  font-family: Raleway;
-  display: inline-table;
-  margin-top: -14em;
-  margin-left: -7em;
-  min-width: 100%;
+  top: -9em;
 }
 
 .largest {
-  font-size: 4vw;
+  font-size: 2.3vw;
 }
 
-.medium {
-  font-size: 2vw;
+/*ticket page specifics*/
+.box-container{
+  margin-top: 10em;
+}
+
+.textbox-top {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  height: fit-content;
+  block-size: fit-content;
+  padding: 2em 2em 2em;
+  margin-left: 5em; 
+  margin-right: 5em;
+  margin-bottom: 2.5em;
+}
+
+.tickets-grid {
+  display: grid;
+  height: 17em;
+  grid-template-columns: 3fr 5fr 2fr;
+  grid-template-rows: 3fr 3fr 9fr 3.5em;
+  grid-gap: 0.5em;
+  grid-template-areas: 
+  "icon title title"
+  "icon price price"
+  "icon text text"
+  "icon button button";
+}
+
+.addons-grid {
+  display: grid;
+  height: 32em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr 3fr 9fr 3.5em;
+  grid-gap: 0.5em;
+  grid-template-areas: 
+  "icon title title"
+  "icon price price"
+  "icon text text"
+  "icon button button";
+}
+ 
+/*start of grid test
+.test-icon{
+  grid-area: icon;
+  background: red;
+}
+.test-title{
+  grid-area: title;
+  background: blue;
+}
+.test-price{
+  grid-area: price;
+  background: green;
+}
+.test-text{
+  grid-area: text;
+  background: yellow;
+}
+.test-button{
+  grid-area: button;
+  background: orange;
+}
+*/
+
+.tickets-icon {
+  grid-area: icon;
+  align-items: center;
+}
+.tickets-icon>img {
+  object-fit: cover;
+  max-width: 70%;
+  max-height: 70%;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tickets-title {
+  grid-area: title;
+  color: white;
+  text-align: left;
+  font-family: raleway, sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.tickets-price {
+  grid-area: price;
+  color: white;
+  text-align: left;
+  font-family: raleway, sans-serif;
+  font-weight: 400;
+  font-size: 2.25em;
+}
+
+.tickets-info {
+  padding-right: 3em;
+  grid-area: text;
+  color: white;
+  text-align: left;
+  font-family: raleway, sans-serif;
+  font-weight: 200;
+  font-size: 1.25em;
+}
+
+.button-container {
+  grid-area: button;
+  color:white;
+  background: #931727;
+  margin-left: 70vh;
+}
+
+.button-text {
+  text-align: center;
+  font-family: raleway, sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
