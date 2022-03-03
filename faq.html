@@ -3,9 +3,16 @@
         <meta charset="utf-8">
         <link rel = "stylesheet" href = "style.css">
         <link rel="stylesheet" href = "https://use.typekit.net/tnv4cny.css">
-        <title>CSS Accordion</title>
+        <title>Zillennium</title>
     
     <style>
+
+        body {
+                background-position: center;
+                background-image: url(tickets-and-faq-bg.png);
+                background-attachment: fixed;
+        }
+
         input {
             display: none;
         }
@@ -13,19 +20,23 @@
         label {
             font-family: raleway, sans-serif;
             font-weight: 400;
-            font-size: 22px;
+            font-size: 1.50em;
             display: block;    
             padding: 8px 22px;
             margin: 0 0 1px 0;
             cursor: pointer;
-            background: ;
-            border-radius: 3px;
             color: #FFF;
             transition: ease .5s;
             position: relative; /* ADDING THIS IS REQUIRED */
+            background: rgba(0, 0, 0, 0.5);
         }
         
         label:hover {
+        }
+
+        .textbox-container{
+            margin-left: 1em;
+            margin-right: 1em;
         }
         
         label::after {
@@ -47,13 +58,13 @@
         .content {
             font-family: raleway, sans-serif;
             font-weight: 150;
-            font-size: 16px;
+            font-size: 1.25em;
             text-align: left;
             position: relative;
             padding: 10px 25px;
             color: #FFF;
             margin: 0 0 1px 0;
-            border-radius: 3px;
+            background: rgba(0, 0, 0, 0.5);
         }
 
         .faq {
@@ -62,7 +73,6 @@
             text-align: left;
             position: relative;
             color: #FFF;
-            padding-left: .3em;
         }
         
         input + label + .content {
@@ -80,25 +90,23 @@
         }
 
         .pad{
-            padding-right: 1.5em;
-            padding-left: -1em;
+            padding-right: 4em;
+            padding-left: 4em;
             position: relative; 
+            margin-top: 8em;
         }
 
     
     </style>
     </head>
     <body>
-        <div class = "homepage_wrapper">
-            <div class = "homepage_image">
-                <img class="bg" src = "tickets-and-faq-bg.png">
-            </div>
+
             <div class = "logo">
                 <a href = "index.html">
                     <img src = "logo_prot_3.svg">
                 </a>
-                
             </div>
+
             <div class = "navbar">
                 <ul class = "navbar_links">
                     <li>
@@ -107,29 +115,22 @@
                     </li>
                 </ul>
             </div>
-            <div class = "myDiv">
-                <h10>FAQ</h10>
-            </div>
-            <div class = "myDiv">
-                <h10>FAQ</h10>
-            </div>
-        </div>
-        
-        <div class = "myDiv">
-            <h6>FAQ</h6>
-        </div>
+
+
+
         <div class="pad">
         <div class= "faq">
-            <p><strong>F</strong>requently&nbsp;&nbsp;&nbsp;&nbsp; <strong>A</strong>sked&nbsp;&nbsp;&nbsp;&nbsp; <strong>Q</strong>uestions</p>
+            <p style="font-family: Termina; font-weight: 200; font-size: 40;"><strong style="font-weight: 400; font-size: 60px;">F</strong>requently&nbsp;&nbsp;&nbsp; <strong style="font-weight: 400; font-size: 60px;">A</strong>sked&nbsp;&nbsp;&nbsp; <strong style="font-weight: 400; font-size: 60px;">Q</strong>uestions</p>
         </div>
 
+        <div class="textbox-container">
         <input type="checkbox" id="title1" />
         <label for="title1">Getting There</label>
 
         <div class="content">
-            <p>Zillenium 2022 will be taking place at Citi field, which is easily accessible through public transportation. Take the 7 train to the Met/Willets Point station or hop on the Q48 bus which takes passengers directly to the stadium.
+            <p>Zillennium 2022 will be taking place at Citi field, which is easily accessible through public transportation. Take the 7 train to the Met/Willets Point station or hop on the Q48 bus which takes passengers directly to the stadium.
 
-            For those coming in from long Island or out of the the city, take advantage of the LIRR from Penn station. Two stops and a 15 mintue train ride later and youll be at Zillenium at the Mets/Willets Point station.
+            For those coming in from long Island or out of the the city, take advantage of the LIRR from Penn station. Two stops and a 15 mintue train ride later and youll be at Zillennium at the Mets/Willets Point station.
 
             We recommend taking an uber or being driven to Citifield since very limited parking will be available to festival patreons.
             </p>
@@ -158,7 +159,7 @@
         <label for="title4">Food & Drinks</label>
 
         <div class="content">
-            <p>By partnering with local businesses, Zillenium plans to offer a wide variety of cuisine for any attendee to enjoy. We also plan to offer vegan, vegetarian, and gluten free options to accommodate all dietary restrictions. </p>
+            <p>By partnering with local businesses, Zillennium plans to offer a wide variety of cuisine for any attendee to enjoy. We also plan to offer vegan, vegetarian, and gluten free options to accommodate all dietary restrictions. </p>
         </div>
 
 
@@ -166,9 +167,10 @@
         <label for="title5">Lost and Found</label>
 
         <div class="content">
-            <p>Found something that deosn’t belong to you or lost something important? Find your way to the lost and found tent or send a ticket to lostandfound@zillenium.com and let us take care of you!
+            <p>Found something that deosn’t belong to you or lost something important? Find your way to the lost and found tent or send a ticket to lostandfound@Zillennium.com and let us take care of you!
             </p>
         </div>
+    </div>
     </div>
     </body>
 
