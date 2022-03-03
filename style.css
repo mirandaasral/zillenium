@@ -103,17 +103,16 @@ body {
 }
 
 .top_film img {
-  position: absolute;
+  position: relative;
   height: auto;
   width: 100%;
-  margin-top: 40em;
+  margin-top: 35em;
 }
 
-.film_reel img {
-  height: auto;
+footer img {
+  position: relative;
+  margin-top: -20em;
   width: 100%;
-  position: absolute;
-  margin-top: -25em;
 }
 
 .general-admissions {
@@ -148,13 +147,15 @@ body {
   grid-template-rows: auto auto auto;
   grid-gap: 10px;
   margin-right: 0;
+  position: relative;
+  margin-top: -20em;
 }
 
 .friday {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-row: 1/2;
-  margin-top: 80em;
+  position: relative;
 }
 
 .saturday {
@@ -163,6 +164,7 @@ body {
   grid-template-rows: auto;
   margin-top: 15em;
   grid-row: 2/3;
+  position: relative;
 }
 
 .sunday {
@@ -171,6 +173,7 @@ body {
   grid-template-rows: auto;
   margin-top: 15em;
   grid-row: 3/4;
+  position: relative;
 }
 
 .day {
@@ -182,7 +185,6 @@ body {
   font-size: 3vw;
   transform-origin: 0 0;
   transform: rotate(-90deg);
-  position: relative;
 }
 
 .fri_arrow {
